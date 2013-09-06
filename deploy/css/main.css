@@ -13,101 +13,103 @@ html, body {
   height: 100%;
 }
 
-/* line 16, ../../src/sass/main.scss */
-.background {
+/* line 18, ../../src/sass/main.scss */
+.background,
+.background__sky,
+.background__ground {
   position: absolute;
   width: 100%;
   height: 100%;
 }
 
-/* line 23, ../../src/sass/main.scss */
+/* line 25, ../../src/sass/main.scss */
 .background__line {
   position: absolute;
   width: 100%;
   bottom: 0;
 }
 
-/* line 29, ../../src/sass/main.scss */
+/* line 31, ../../src/sass/main.scss */
 .background__line--blue_dark {
   height: 575px;
   background-color: #37a3e7;
 }
 
-/* line 34, ../../src/sass/main.scss */
+/* line 36, ../../src/sass/main.scss */
 .background__line--blue_medium {
   height: 410px;
   background-color: #59b1e8;
 }
 
-/* line 39, ../../src/sass/main.scss */
+/* line 41, ../../src/sass/main.scss */
 .background__line--blue_light {
   height: 300px;
   background-color: #b0d3e8;
 }
 
-/* line 44, ../../src/sass/main.scss */
+/* line 46, ../../src/sass/main.scss */
 .background__line--yellow {
   height: 235px;
   background-color: #f8f4eb;
 }
 
-/* line 49, ../../src/sass/main.scss */
+/* line 51, ../../src/sass/main.scss */
 .background__line--orange_light {
   height: 180px;
   background-color: #f8e9e0;
 }
 
-/* line 54, ../../src/sass/main.scss */
+/* line 56, ../../src/sass/main.scss */
 .background__line--orange_medium {
   height: 155px;
   background-color: #f8dbce;
 }
 
-/* line 59, ../../src/sass/main.scss */
+/* line 61, ../../src/sass/main.scss */
 .background__line--red {
   height: 135px;
   background-color: #f8d1c3;
 }
 
-/* line 64, ../../src/sass/main.scss */
+/* line 66, ../../src/sass/main.scss */
 .background__line--green_dark {
   height: 125px;
   background-color: #a6aa59;
 }
 
-/* line 69, ../../src/sass/main.scss */
+/* line 71, ../../src/sass/main.scss */
 .background__line--green_light {
   height: 95px;
   background-color: #c7cc6b;
 }
 
-/* line 74, ../../src/sass/main.scss */
+/* line 76, ../../src/sass/main.scss */
 .background__line--brown {
   height: 90px;
   background-color: #e8af72;
 }
 
-/* line 79, ../../src/sass/main.scss */
+/* line 81, ../../src/sass/main.scss */
 .landscape {
   position: absolute;
   width: 100%;
   height: 100%;
 }
 
-/* line 85, ../../src/sass/main.scss */
+/* line 87, ../../src/sass/main.scss */
 .landscape__clouds {
   position: absolute;
   bottom: 560px;
   width: 100%;
 }
 
-/* line 91, ../../src/sass/main.scss */
+/* line 93, ../../src/sass/main.scss */
 .landscape__cloud {
   position: absolute;
   left: 50%;
 }
 
-/* line 96, ../../src/sass/main.scss */
+/* line 98, ../../src/sass/main.scss */
 .landscape__cloud--cloud0 {
   background: url('../img/sprites-s14c79e39d4.png') 0 -938px no-repeat;
   height: 35px;
@@ -116,7 +118,7 @@ html, body {
   top: -18px;
 }
 
-/* line 102, ../../src/sass/main.scss */
+/* line 104, ../../src/sass/main.scss */
 .landscape__cloud--cloud1 {
   background: url('../img/sprites-s14c79e39d4.png') 0 -973px no-repeat;
   height: 25px;
@@ -125,7 +127,7 @@ html, body {
   top: 55px;
 }
 
-/* line 108, ../../src/sass/main.scss */
+/* line 110, ../../src/sass/main.scss */
 .landscape__cloud--cloud2 {
   background: url('../img/sprites-s14c79e39d4.png') 0 -998px no-repeat;
   height: 20px;
@@ -134,7 +136,7 @@ html, body {
   top: 50px;
 }
 
-/* line 114, ../../src/sass/main.scss */
+/* line 116, ../../src/sass/main.scss */
 .landscape__cloud--cloud3 {
   background: url('../img/sprites-s14c79e39d4.png') 0 -1106px no-repeat;
   height: 10px;
@@ -142,7 +144,7 @@ html, body {
   margin-left: -210px;
 }
 
-/* line 119, ../../src/sass/main.scss */
+/* line 121, ../../src/sass/main.scss */
 .landscape__cloud--cloud4 {
   background: url('../img/sprites-s14c79e39d4.png') 0 -1096px no-repeat;
   height: 10px;
@@ -151,20 +153,20 @@ html, body {
   top: 40px;
 }
 
-/* line 125, ../../src/sass/main.scss */
+/* line 127, ../../src/sass/main.scss */
 .landscape__characters {
   position: absolute;
   width: 100%;
   bottom: 279px;
 }
 
-/* line 131, ../../src/sass/main.scss */
+/* line 133, ../../src/sass/main.scss */
 .landscape__character {
   position: absolute;
   left: 50%;
 }
 
-/* line 136, ../../src/sass/main.scss */
+/* line 138, ../../src/sass/main.scss */
 .landscape__character--human {
   background: url('../img/sprites-s14c79e39d4.png') 0 0 no-repeat;
   height: 158px;
@@ -172,14 +174,14 @@ html, body {
   margin-left: -200px;
 }
 
-/* line 141, ../../src/sass/main.scss */
+/* line 143, ../../src/sass/main.scss */
 .selector--human {
   position: relative;
   top: -30px;
   margin: 0 auto;
 }
 
-/* line 147, ../../src/sass/main.scss */
+/* line 149, ../../src/sass/main.scss */
 .landscape__character--dog {
   background: url('../img/sprites-s14c79e39d4.png') 0 -507px no-repeat;
   height: 52px;
@@ -188,7 +190,7 @@ html, body {
   top: 106px;
 }
 
-/* line 153, ../../src/sass/main.scss */
+/* line 155, ../../src/sass/main.scss */
 .landscape__tree {
   background: url('../img/sprites-s14c79e39d4.png') 0 -158px no-repeat;
   height: 205px;
@@ -199,7 +201,7 @@ html, body {
   bottom: 118px;
 }
 
-/* line 161, ../../src/sass/main.scss */
+/* line 163, ../../src/sass/main.scss */
 .landscape__fences {
   position: absolute;
   width: 100%;
@@ -207,7 +209,7 @@ html, body {
   bottom: 160px;
 }
 
-/* line 168, ../../src/sass/main.scss */
+/* line 170, ../../src/sass/main.scss */
 .landscape__fences--left {
   background: url('../img/sprites-s14c79e39d4.png') 0 -721px no-repeat;
   height: 57px;
@@ -216,7 +218,7 @@ html, body {
   left: 0;
 }
 
-/* line 174, ../../src/sass/main.scss */
+/* line 176, ../../src/sass/main.scss */
 .landscape__fences--right {
   background: url('../img/sprites-s14c79e39d4.png') 0 -664px no-repeat;
   height: 57px;

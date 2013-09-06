@@ -13,7 +13,9 @@ html, body {
     height: 100%;
 }
 
-.background {
+.background,
+.background__sky,
+.background__ground {
     position: absolute;
     // bottom: 70px;
     width: 100%;
