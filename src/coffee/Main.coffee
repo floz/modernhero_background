@@ -31,17 +31,18 @@ class Main
 		@_showLines()
 
 	_showLines: ->
-		@_speeds = [ 8, 4, 3, 2.8, 2.7, 2.5, 2.3 ]
-		@_delays = [ 0, 2, 3, 3.5, 3.75, 3.9, 4.1 ]
+		@_speeds = [ 6, 4, 3, 2.8, 2.7, 2.5, 2.3 ]
+		@_delays = [ 0, 2, 3, 3.5, 4, 4.25, 4.5 ]
 
+		ratio = .5
 		idx = 0
 		speed = 1
 		for line in @_$lines
-			TweenLite.to line, @_speeds[ idx ] * .5, { height: @_heights[ idx ] + "px", delay: @_delays[ idx ], ease: Quad.easeOut }
+			TweenLite.to line, @_speeds[ idx ] * ratio, { height: @_heights[ idx ] + "px", delay: @_delays[ idx ] * ratio, ease: Quad.easeOut }
 			idx++
 			# break if idx == 5
 
-		TweenLite.to @_$background_sky, 5.5, { bottom: 0 }
-		TweenLite.to @_$background_ground, 1, { bottom: 0, delay: 4.4, ease: Quad.easeOut }
+		TweenLite.to @_$background_sky, 5.5 * ratio, { bottom: 0 }
+		TweenLite.to @_$background_ground, 4 * ratio, { bottom: 0, delay: 3 * ratio, ease: Quad.easeOut }
 
 
